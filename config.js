@@ -13,7 +13,7 @@ const BUSINESS_CONFIG = {
     legalName: 'ByteWorks UK Ltd',
     
     // Contact Information
-    phone: '+44 113 123 4567',
+    phone: '+44 113 123 1111',
     email: 'info@byteworksuk.co.uk',
     
     // Physical Address
@@ -229,3 +229,4 @@ initializeBusinessConfig();
  * - getBusinessName()
  * - getWebsiteURL()
  */
+
