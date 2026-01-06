@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ByteWorks UK Ltd Services - Comprehensive IT services, managed support, systems consulting, cybersecurity, and technology solutions.">
+    <meta name="keywords" content="IT services, managed support, cybersecurity, cloud services, business technology">
+    <title>Services - ByteWorks UK Ltd</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+        
+        header {
+            background-color: #0a2540;
+            color: #ffffff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: #0a2540;
+        }
+        
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #0a2540;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 25px 0 15px 0;
+            color: #1a1a1a;
+        }
+        
+        h2:first-child {
+            margin-top: 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.9;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .hero-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .service-section {
+            padding: 40px;
+            background-color: #fafafa;
+            border-left: 4px solid #0a2540;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+        
+        .service-section h3 {
+            margin-top: 0;
+        }
+        
+        .footer {
+            background-color: #0a2540;
+            color: #ffffff;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-content h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .footer-content a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.9;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer-content a:hover {
+            opacity: 1;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 20px;
+            border-left: 4px solid #0a2540;
+            margin: 20px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #0a2540;
+            color: #ffffff;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .cta-button:hover {
+            background-color: #051d30;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const BUSINESS_PHONE = '+44 113 123 4567';
+        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
+        const BUSINESS_NAME = 'ByteWorks UK Ltd';
+        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
+        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
+    </script>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">ByteWorks UK</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="services">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p class="intro-text">ByteWorks UK Ltd provides a comprehensive range of information technology services designed to address the diverse technology requirements of small and medium-sized enterprises across the United Kingdom. Our service portfolio encompasses infrastructure management, systems support, security implementation, and strategic technology consulting delivered by certified professionals committed to technical excellence and transparent service delivery.</p>
+
+            <h2>Service Overview</h2>
+            <p>Our services are organised into six core categories addressing the full spectrum of business technology requirements. Each service category is supported by detailed service agreements, clearly defined scope and limitations, and documented support procedures. We offer services on both managed contract basis and project-based engagement models depending on client requirements and preferences.</p>
+
+            <h2>1. Managed IT Support Services</h2>
+            
+            <div class="service-section">
+                <h3>Service Description and Scope</h3>
+                <p>Managed IT support represents our core service offering, providing ongoing technology infrastructure monitoring, helpdesk support, systems administration, and proactive maintenance services. Rather than traditional break-fix support models that react only when failures occur, our managed approach monitors systems continuously, anticipates potential problems, and implements preventative measures to minimise service disruptions and optimise operational efficiency.</p>
+                <p>This service includes helpdesk support for end-user technology issues, network and server administration, backup systems management, software licensing administration, security patching, firmware updates, and performance optimisation. Support is available during contracted service windows with documented escalation procedures for urgent issues requiring out-of-hours intervention.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Delivery Model</h3>
+                <p>Managed IT support is delivered according to documented service level agreements specifying support hours, response times for different issue categories, service availability targets, and monthly maintenance windows. Issues are categorised by severity: Critical issues affecting business operations receive immediate response, High priority issues affecting individual users receive response within 2 hours during business hours, Medium priority issues receive response within 4 hours, and Low priority requests receive response within 2 business days.</p>
+                <p>All support interactions are documented in ticketing systems providing clients with visibility into issue status, resolution steps, and service history. Monthly service reports summarise support activities, performance metrics, and any recommendations for process improvements or system enhancements.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Inclusions</h3>
+                <ul>
+                    <li>24/7 remote system monitoring including network monitoring, server monitoring, and security alert monitoring</li>
+                    <li>Helpdesk support via telephone, email, and remote connection technologies during contracted service hours</li>
+                    <li>Automated patch management and security update deployment across all systems</li>
+                    <li>Monthly system health reviews and performance analysis</li>
+                    <li>User access management, password resets, and account administration</li>
+                    <li>Basic technical support and troubleshooting for business applications within scope</li>
+                    <li>Automated backup verification and restoration testing</li>
+                    <li>Antivirus and malware protection management</li>
+                    <li>Network and server infrastructure maintenance and optimisation</li>
+                    <li>Monthly service reporting with performance metrics and recommendations</li>
+                </ul>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Exclusions</h3>
+                <p>Managed IT support services exclude custom application development, specialised software support beyond initial configuration, user training and education programmes, major infrastructure redesign projects, and services explicitly defined as out-of-scope in service agreements. Services for applications not listed in the managed service contract are provided on a separate time-and-materials basis.</p>
+            </div>
+
+            <h2>2. Network Infrastructure and Systems Management</h2>
+
+            <div class="service-section">
+                <h3>Service Description</h3>
+                <p>This service encompasses design, implementation, and ongoing management of network infrastructure, server systems, and core IT infrastructure supporting business operations. We assist organisations in planning network architecture, implementing appropriate infrastructure solutions, and managing systems to ensure reliability, performance, and security alignment with business requirements.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Components</h3>
+                <ul>
+                    <li><strong>Network Design and Implementation</strong> - Design of network infrastructure aligned with business requirements, implementing switches, routers, firewalls, wireless systems, and network security controls. Installation and configuration of network hardware with testing and validation before deployment to production environments.</li>
+                    <li><strong>Server Infrastructure</strong> - Design and implementation of server systems including physical servers, virtual infrastructure, storage systems, and backup solutions. Capacity planning, system sizing, and performance optimisation aligned with organisational requirements and growth projections.</li>
+                    <li><strong>Cloud Infrastructure Management</strong> - Assessment, migration, and ongoing management of cloud-based infrastructure including Amazon Web Services, Microsoft Azure, and Google Cloud Platform services. Guidance on cloud architecture design, cost optimisation, and security implementation.</li>
+                    <li><strong>Backup and Disaster Recovery</strong> - Design and implementation of comprehensive backup systems with automated scheduling, backup verification testing, and documented disaster recovery procedures enabling restoration of critical systems within defined time objectives.</li>
+                    <li><strong>System Upgrades and Migrations</strong> - Planning and execution of operating system upgrades, hardware replacements, and system migrations with minimal service disruption. Comprehensive testing and rollback procedures to ensure upgrade success.</li>
+                </ul>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Standards and Quality Assurance</h3>
+                <p>All infrastructure work is planned comprehensively with documented scope, timeline, and contingency procedures. Implementation is performed by certified professionals with relevant qualifications. Post-implementation, systems undergo testing and validation before acceptance. Documentation is provided including network diagrams, system configurations, and operational procedures. Clients receive training on new systems and operational requirements where appropriate.</p>
+            </div>
+
+            <h2>3. Cybersecurity Services</h2>
+
+            <div class="service-section">
+                <h3>Service Overview</h3>
+                <p>Cybersecurity services protect business systems and data against evolving security threats including malware, ransomware, data breaches, and unauthorised access. Our approach combines preventative measures (systems hardening, security controls implementation), detection capabilities (monitoring and threat detection), and response procedures (incident response planning) creating comprehensive security posture aligned with risk profile and regulatory requirements.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Components</h3>
+                <ul>
+                    <li><strong>Security Assessments and Audits</strong> - Comprehensive evaluation of security posture including vulnerability scanning, penetration testing, configuration review, and security awareness assessment. Reports identify security gaps and provide prioritised recommendations for improvement.</li>
+                    <li><strong>Cyber Essentials Certification Support</strong> - Guidance on meeting Cyber Essentials scheme requirements including firewall implementation, access control, malware protection, patch management, and secure configuration. Assistance with certification assessment and maintenance.</li>
+                    <li><strong>Endpoint Security Management</strong> - Deployment and management of antivirus, anti-malware, and endpoint detection and response (EDR) solutions across all user devices and servers. Centralized management, threat detection, and incident response capabilities.</li>
+                    <li><strong>Firewalls and Network Security</strong> - Design, implementation, and management of next-generation firewalls, intrusion prevention systems, and network security controls. Configuration of rule sets, access policies, and threat prevention capabilities.</li>
+                    <li><strong>Access Control and Identity Management</strong> - Implementation of strong authentication systems including multi-factor authentication, access control procedures, and privilege management. Regular access reviews to ensure appropriate permissions and revocation of unnecessary access rights.</li>
+                    <li><strong>Incident Response Planning and Support</strong> - Development of incident response procedures, staff training, and support during security incidents. Assistance with breach notification, forensic investigation, and remediation planning.</li>
+                    <li><strong>Security Awareness Training</strong> - Staff training programmes addressing phishing recognition, password security, data protection, and security best practices. Training customised to role-specific requirements and industry risks.</li>
+                </ul>
+            </div>
+
+            <h2>4. Business Systems Support and Implementation</h2>
+
+            <div class="service-section">
+                <h3>Service Description</h3>
+                <p>This service provides support for business-critical applications including enterprise resource planning (ERP) systems, customer relationship management (CRM) platforms, accounting software, human resources information systems, and industry-specific applications. We provide implementation support, ongoing technical support, customisation, and integration services enabling effective system utilisation aligned with business processes.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Components</h3>
+                <ul>
+                    <li><strong>System Implementation and Deployment</strong> - Support for business system selection, configuration, customisation, and deployment aligned with organisational requirements. Data migration from legacy systems, user training, and documentation of business processes and system configuration.</li>
+                    <li><strong>Application Integration</strong> - Integration of business systems with other organisational applications enabling data flow between systems, eliminating manual data entry, and improving operational efficiency. Design of integration architecture, implementation of integration solutions, and testing.</li>
+                    <li><strong>Ongoing System Support</strong> - Technical support for system issues, user support for application functionality questions, system administration and maintenance, performance monitoring and optimisation.</li>
+                    <li><strong>System Customisation and Enhancement</strong> - Customisation of standard application functionality to align with specific business requirements. Development of custom modules, reports, and workflows extending standard application capabilities.</li>
+                    <li><strong>User Training and Documentation</strong> - Development of user training programmes, documentation of business processes and system functionality, and ongoing user support ensuring effective system utilisation.</li>
+                </ul>
+            </div>
+
+            <h2>5. Data Protection and Compliance Services</h2>
+
+            <div class="service-section">
+                <h3>Service Overview</h3>
+                <p>Data protection and compliance services ensure organisational adherence to UK GDPR, Data Protection Act 2018, industry-specific regulations, and privacy standards. We provide guidance on compliance requirements, implement required technical and organisational safeguards, and support compliance assessments and regulatory audits.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Components</h3>
+                <ul>
+                    <li><strong>GDPR and Data Protection Compliance</strong> - Assessment of data processing activities against GDPR requirements, guidance on lawful processing, data subject rights procedures, and technical safeguards including encryption and access controls. Development of privacy policies, data processing agreements, and consent management procedures.</li>
+                    <li><strong>Data Mapping and Inventory</strong> - Documentation of personal data types, processing purposes, retention periods, and data flows enabling compliance with accountability principle and supporting compliance assessments.</li>
+                    <li><strong>Privacy Impact Assessments</strong> - Identification of high-risk processing activities requiring impact assessments, completion of data protection impact assessments, and implementation of risk mitigation measures.</li>
+                    <li><strong>Incident Response and Breach Notification</strong> - Development of incident response procedures, support during data breach incidents, and guidance on breach notification requirements under GDPR.</li>
+                    <li><strong>Data Subject Rights Support</strong> - Implementation of procedures enabling data subjects to exercise GDPR rights including access requests, rectification requests, erasure requests, and portability. Systems and processes for rights verification and timely response.</li>
+                </ul>
+            </div>
+
+            <h2>6. Strategic Technology Consulting</h2>
+
+            <div class="service-section">
+                <h3>Service Overview</h3>
+                <p>Strategic technology consulting assists organisations in developing long-term technology strategies, planning digital transformation initiatives, optimising IT operations, and aligning technology investments with business objectives. We provide guidance on technology evaluation, vendor selection, implementation planning, and change management supporting successful technology initiatives.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Service Components</h3>
+                <ul>
+                    <li><strong>Technology Strategy and Roadmap Development</strong> - Assessment of current technology environment, identification of technology requirements aligned with business strategy, and development of multi-year technology roadmap prioritising investments and planned initiatives.</li>
+                    <li><strong>Digital Transformation Planning</strong> - Guidance on technology-enabled business transformation, process redesign opportunities, and implementation planning for significant technology initiatives. Change management support and stakeholder communication planning.</li>
+                    <li><strong>Vendor Evaluation and Selection</strong> - Evaluation of technology vendors and solutions, comparison against organisational requirements, and guidance on selection decisions balancing functionality, cost, implementation complexity, and long-term support.</li>
+                    <li><strong>IT Operations Optimisation</strong> - Assessment of current IT operations, identification of efficiency opportunities, cost reduction potential, and recommendations for operational improvements. Support for implementation of improvements and change management.</li>
+                    <li><strong>Technology Risk Assessment</strong> - Identification of technology risks including security risks, system reliability risks, and operational risks. Guidance on risk mitigation strategies and resource allocation priorities.</li>
+                </ul>
+            </div>
+
+            <h2>Service Quality Standards and Client Responsibilities</h2>
+
+            <h3>Our Quality Commitments</h3>
+            <p>ByteWorks UK Ltd is committed to delivering high-quality services meeting agreed requirements and professional standards. We maintain detailed service documentation, provide transparent communication regarding service delivery, implement documented procedures ensuring consistent quality, and maintain professional accountability. Our staff hold relevant qualifications and undertake ongoing professional development. We welcome client feedback and implement continuous improvements based on feedback and changing requirements.</p>
+
+            <h3>Client Responsibilities</h3>
+            <p>Successful service delivery requires effective client participation. Clients are responsible for providing accurate information regarding requirements, providing access to systems necessary for service delivery, allocating appropriate personnel for project participation, making timely decisions regarding recommendations, and following security procedures and best practices. Clients must also ensure that hardware, software, and network infrastructure meet minimum requirements for supported services and provide timely payment for services rendered.</p>
+
+            <h2>Service Engagement Models</h2>
+
+            <div class="service-section">
+                <h3>Managed Service Contracts</h3>
+                <p>Ongoing technology support on defined contract basis with monthly pricing, specified service levels, and regular reporting. Ideal for organisations seeking consistent technology support with predictable costs. Services can be tailored to specific requirements and adjusted as needs evolve.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Project-Based Engagements</h3>
+                <p>Time-limited engagements for specific projects or initiatives with defined scope, timeline, and completion criteria. Includes system implementations, security assessments, infrastructure upgrades, and strategic consulting projects. Pricing based on estimated hours and resource requirements.</p>
+            </div>
+
+            <div class="service-section">
+                <h3>Time and Materials Engagements</h3>
+                <p>Support for ad-hoc technology requirements, urgent issues, or work outside primary contract scope. Hourly rates apply with support available through documented procedures.</p>
+            </div>
+
+            <h2>How to Engage Our Services</h2>
+            <p>Organisations interested in engaging ByteWorks UK services are invited to contact us to discuss specific requirements, receive service proposals, and explore how our expertise can support technology objectives. We provide initial consultations at no charge to understand requirements and explain how our services can add value.</p>
+
+            <a href="contact.html" class="cta-button">Request a Consultation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>About ByteWorks UK</h4>
+                    <p style="margin-bottom: 10px;">Professional IT services and managed technology support for UK-based businesses.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="index.html" style="display: block;">Home</a>
+                    <a href="about.html" style="display: block;">About Us</a>
+                    <a href="contact.html" style="display: block;">Contact</a>
+                    <a href="faq.html" style="display: block;">FAQ</a>
+                </div>
+                <div>
+                    <h4>Legal Documentation</h4>
+                    <a href="privacy.html" style="display: block;">Privacy Policy</a>
+                    <a href="terms.html" style="display: block;">Terms and Conditions</a>
+                    <a href="cookies.html" style="display: block;">Cookie Policy</a>
+                    <a href="legal.html" style="display: block;">Legal Notice</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ByteWorks UK Ltd. All rights reserved. Registered in England and Wales. Registered Office: The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

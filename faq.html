@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ByteWorks UK Ltd FAQ - Frequently Asked Questions about IT services, privacy, billing, and support.">
+    <meta name="keywords" content="FAQ, frequently asked questions, help, support">
+    <title>FAQ - ByteWorks UK Ltd</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+        
+        header {
+            background-color: #0a2540;
+            color: #ffffff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: #0a2540;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #0a2540;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 15px 0;
+            color: #1a1a1a;
+        }
+        
+        h2:first-child {
+            margin-top: 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .intro-text {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .hero-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .faq-card {
+            background-color: #fafafa;
+            padding: 25px;
+            border-left: 4px solid #0a2540;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .faq-card h3 {
+            margin-top: 0;
+            color: #0a2540;
+        }
+        
+        .faq-category {
+            margin: 40px 0;
+        }
+        
+        .footer {
+            background-color: #0a2540;
+            color: #ffffff;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-content h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .footer-content a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.9;
+            opacity: 0.9;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const BUSINESS_PHONE = '+44 113 123 4567';
+        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
+        const BUSINESS_NAME = 'ByteWorks UK Ltd';
+        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
+        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
+    </script>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">ByteWorks UK</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="faq">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p class="intro-text">This section provides answers to common questions regarding ByteWorks UK services, privacy practices, billing, support, and general business operations. If you cannot find an answer to your question, please contact our team directly at <span id="email-display"></span> or <span id="phone-display"></span>.</p>
+
+            <div class="faq-category">
+                <h2>Services and Capabilities</h2>
+                
+                <div class="faq-card">
+                    <h3>What services does ByteWorks UK provide?</h3>
+                    <p>ByteWorks UK Ltd provides comprehensive information technology services including managed IT support, network infrastructure management, cybersecurity implementation, business systems support, data protection and compliance services, and strategic technology consulting. A detailed description of all services is available on our Services page. We tailor service offerings to match individual client requirements rather than imposing standardised solutions.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Who are typical ByteWorks UK clients?</h3>
+                    <p>ByteWorks UK works primarily with small and medium-sized enterprises across the United Kingdom. Our service offerings are designed for organisations with 5 to 500+ employees across various industry sectors including professional services, manufacturing, retail, healthcare, education, and financial services. We welcome enquiries from organisations of any size seeking professional technology support.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Do you offer support for specific software or systems?</h3>
+                    <p>ByteWorks UK provides support for a wide range of business systems and applications. Specific software support is documented in individual service agreements. Where software support is not included in standard managed services, support is available on a project or time-and-materials basis. Please contact us to discuss support for specific applications.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What is the difference between managed support and project-based services?</h3>
+                    <p>Managed support involves ongoing technology support on a monthly contract basis with defined service levels and regular reporting. Project-based services address specific technology initiatives with defined scope and completion criteria. Many clients use combinations of both engagement models depending on requirements. We provide proposals detailing each approach and associated costs.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Can ByteWorks UK work with my existing IT provider?</h3>
+                    <p>Yes, ByteWorks UK can complement existing IT arrangements by providing additional expertise, capacity, or specialised services. We work collaboratively with other IT providers where appropriate. Please contact us to discuss how we can support your current technology environment.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>How long does it take to implement services?</h3>
+                    <p>Implementation timelines vary based on service scope and complexity. Simple services such as helpdesk support may commence within days. Complex infrastructure projects may require weeks of planning and implementation. We provide detailed project timelines in service proposals and maintain regular communication regarding progress.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2>Pricing and Billing</h2>
+
+                <div class="faq-card">
+                    <h3>How is ByteWorks UK pricing structured?</h3>
+                    <p>Pricing depends on service type and scope. Managed support services typically use monthly pricing with tiered levels based on user count and service scope. Project-based services use estimated hours and resource requirements. We provide transparent quotes before commencing work, and costs are broken down clearly on invoices. Custom pricing is available for large organisations or long-term partnerships.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>How are invoices calculated?</h3>
+                    <p>Managed support invoices are based on the contracted service tier and number of users supported. Project invoices are calculated using hourly rates multiplied by estimated or actual hours plus any material costs. All calculations are itemised on invoices for transparency. We are happy to explain any invoice line items upon request.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>ByteWorks UK accepts payment by bank transfer, credit/debit cards, and cheques. Preferred payment method is bank transfer. For regular clients, standing order arrangements can be established. Please contact us to discuss payment options.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What are your payment terms?</h3>
+                    <p>Standard payment terms are 30 days from invoice date. This means invoices are due within 30 days of being issued. For new clients or large contracts, shorter payment terms may apply. Specific payment terms are stated in service agreements and invoices.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What happens if I don't pay an invoice on time?</h3>
+                    <p>Late payment is subject to interest at 8% per annum plus Bank of England base rate under the Late Payment of Commercial Debts (Interest) Act 1998. Services may be suspended for accounts with significantly overdue invoices. We contact clients regarding payment issues to work toward resolution. Persistent non-payment may result in legal action to recover amounts owed.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Do you offer discounts for long-term contracts?</h3>
+                    <p>Yes, we can discuss discount arrangements for long-term contracts or large service volumes. Please contact us to discuss pricing for multi-year commitments or bundled services.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2>Support and Service Delivery</h2>
+
+                <div class="faq-card">
+                    <h3>What are your support hours?</h3>
+                    <p>Standard support is available Monday to Friday, 09:00 to 17:30 (GMT). For managed support clients, support outside standard hours may be available through individual service agreements. We are closed on weekends and UK bank holidays. Emergency support for critical system failures may be available outside standard hours for clients with appropriate agreements.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>How quickly will you respond to support requests?</h3>
+                    <p>Response times depend on issue priority and severity. Critical issues affecting business operations receive immediate response. High priority issues affecting individual users receive response within 2 hours. Medium priority issues receive response within 4 hours. Low priority requests receive response within 2 business days. Specific response times are detailed in service level agreements.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>How do I request support?</h3>
+                    <p>Support requests can be submitted via telephone, email, or ticketing system. Contact details are provided at the bottom of this page and on our Contact page. For urgent issues, telephone contact is recommended. All requests are logged and tracked through our ticketing system.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What information should I provide when requesting support?</h3>
+                    <p>When requesting support, please provide detailed description of the issue including when it started, affected systems or users, error messages if applicable, and steps already taken to resolve the issue. Detailed information enables faster diagnosis and resolution.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Do you provide on-site support?</h3>
+                    <p>Yes, on-site support is available for issues requiring physical system access or hardware repairs. On-site support is typically arranged for specific projects or where remote support is insufficient. Travel to client locations is arranged according to geographic proximity and project requirements.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Will you train my staff on new systems?</h3>
+                    <p>Yes, staff training is available for new systems and technologies. Training can be provided as part of system implementation projects or arranged separately. We can develop customised training materials and deliver training tailored to staff roles and requirements.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2>Data Protection and Privacy</h2>
+
+                <div class="faq-card">
+                    <h3>How do you protect my data?</h3>
+                    <p>ByteWorks UK implements comprehensive data protection measures including encryption, access controls, regular security audits, and monitoring systems. Data is stored securely on UK-based or EU-based infrastructure with appropriate security certifications. We comply with UK GDPR and Data Protection Act 2018 requirements. Detailed information is available in our Privacy Policy.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What personal data do you collect?</h3>
+                    <p>Personal data collected through contact forms includes name, email address, telephone number, and company details. Data collected during service delivery includes client contact information, billing data, and technical information necessary for service provision. Data is used only for business purposes and not shared with third parties without consent. See our Privacy Policy for comprehensive details.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Do you comply with GDPR?</h3>
+                    <p>Yes, ByteWorks UK fully complies with UK GDPR and Data Protection Act 2018 requirements. We process personal data only on lawful bases, provide transparent data practices, and respect data subject rights including access requests, rectification, erasure, and portability. Our Privacy Policy provides detailed information regarding GDPR compliance.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Do you share my data with third parties?</h3>
+                    <p>We do not share personal data with third parties for marketing or commercial purposes without explicit consent. Data is shared with service providers only where necessary for service delivery. All service providers are required to maintain appropriate data protection standards through Data Processing Agreements.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>How can I request access to my personal data?</h3>
+                    <p>You can request access to your personal data by emailing us at <span id="email-display-2"></span> with the subject "Data Subject Access Request". Please provide information to identify yourself. We will provide your data free of charge within 30 days. See our Privacy Policy for additional information regarding data subject rights.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What happens if ByteWorks UK experiences a data breach?</h3>
+                    <p>In the event of a personal data breach, ByteWorks UK will investigate promptly, notify affected individuals within 72 hours where required, and notify regulatory authorities as required by law. We will provide clear information regarding breach nature, data affected, and recommended protective actions. We maintain breach records and implement measures to prevent future incidents.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2>Security and Compliance</h2>
+
+                <div class="faq-card">
+                    <h3>Is your website secure?</h3>
+                    <p>Yes, this website uses HTTPS encryption protecting data transmitted between your browser and our website servers. HTTPS verifies that you are communicating with the legitimate ByteWorks UK website and encrypts all communications. We maintain regular security updates and monitoring to prevent unauthorised access or data breaches.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Do you have cybersecurity certifications?</h3>
+                    <p>ByteWorks UK team members hold relevant information security certifications including CompTIA Security Plus, Microsoft Certified credentials, and Cisco certifications. We implement Cyber Essentials standards and maintain security practices aligned with ISO 27001 principles and NIST cybersecurity frameworks.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What are your backup and disaster recovery procedures?</h3>
+                    <p>ByteWorks UK implements automated backup systems with regular testing and validation. Disaster recovery procedures define recovery time objectives and specify backup locations. For managed support clients, backup systems are monitored continuously and restoration is tested regularly to ensure reliability.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>How often do you perform security audits?</h3>
+                    <p>We conduct regular security assessments and penetration testing. Vulnerability scanning occurs regularly with patch management and security updates deployed promptly. Clients receive annual security reports detailing vulnerabilities identified and remediation actions taken.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2>Business Operations</h2>
+
+                <div class="faq-card">
+                    <h3>How long has ByteWorks UK been in business?</h3>
+                    <p>ByteWorks UK Ltd is a registered UK limited company operating with established business infrastructure and professional credentials. Our founding team brings over a decade of combined professional IT experience. We operate as a legitimate, fully compliant UK business subject to Companies House registration and regulatory requirements.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Where is ByteWorks UK registered?</h3>
+                    <p>ByteWorks UK Ltd is registered in England and Wales under Companies House regulations. Our registered office is at The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom. All business operations are conducted within UK jurisdiction and subject to UK legal requirements.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Can I visit your office?</h3>
+                    <p>Yes, office visits are welcome by appointment. Our address is The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL. Please contact us via telephone or email to schedule a suitable time. This enables you to meet our team and discuss requirements in person.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>How do I verify ByteWorks UK's legitimacy?</h3>
+                    <p>ByteWorks UK is a registered UK limited company. You can verify our registration through Companies House at www.companieshouse.gov.uk using our registered name and address. We provide transparent documentation of qualifications, registrations, and compliance. Please contact us if you need verification documentation.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What are your policies regarding contracts and agreements?</h3>
+                    <p>All services are documented in written service agreements specifying scope, pricing, payment terms, service levels, and other key terms. Service agreements protect both ByteWorks UK and clients by establishing clear expectations and obligations. We are happy to discuss any terms before engagement.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2>Complaints and Feedback</h2>
+
+                <div class="faq-card">
+                    <h3>How do I file a complaint?</h3>
+                    <p>Complaints should be directed to <span id="email-display-3"></span> or <span id="phone-display-2"></span>. Written complaints should clearly describe the issue, relevant dates, and desired resolution. We will acknowledge complaint receipt within 2 business days and provide a full response within 10 business days. Complaints help us identify service improvements.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>What happens after I file a complaint?</h3>
+                    <p>Complaints are investigated promptly by our management team. We will contact you to gather additional information if needed. A substantive response will be provided within 10 business days including findings, any actions taken, and explanation of resolution. If you remain unsatisfied, escalation to senior management is available.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Can I appeal a complaint decision?</h3>
+                    <p>Yes, if you are unsatisfied with the initial complaint response, you can request escalation to management for full review. Escalations receive management attention and a final response within 15 business days. We take all complaints seriously and are committed to fair resolution.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>How can I provide positive feedback?</h3>
+                    <p>We welcome positive feedback and appreciate learning about service aspects that are working well. Feedback can be provided via email to <span id="email-display-4"></span> or through direct conversation with our team. Positive feedback helps motivate our team and informs service improvements.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2>Additional Questions</h2>
+
+                <div class="faq-card">
+                    <h3>I don't see my question answered here. How can I get more information?</h3>
+                    <p>Please contact our team directly. We are happy to discuss any aspects of our services, answer questions, or address concerns. You can reach us via telephone at <span id="phone-display-3"></span>, email at <span id="email-display-5"></span>, or by completing the contact form on our Contact page.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Can I request a meeting to discuss my requirements?</h3>
+                    <p>Absolutely. We encourage organisations to schedule consultations to discuss technology requirements, explore how ByteWorks UK can help, and answer any questions. Initial consultations are provided at no charge. Please contact us to arrange a suitable time.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Do you offer free trials or demos?</h3>
+                    <p>We provide initial consultations and demonstrations of our services and capabilities at no charge. This enables you to understand how we work and whether our services match your requirements before making commitment. Please contact us to arrange a demo or consultation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>About ByteWorks UK</h4>
+                    <p style="margin-bottom: 10px;">Professional IT services and managed technology support for UK-based businesses.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="index.html" style="display: block;">Home</a>
+                    <a href="about.html" style="display: block;">About Us</a>
+                    <a href="services.html" style="display: block;">Services</a>
+                    <a href="contact.html" style="display: block;">Contact</a>
+                </div>
+                <div>
+                    <h4>Legal Documentation</h4>
+                    <a href="privacy.html" style="display: block;">Privacy Policy</a>
+                    <a href="terms.html" style="display: block;">Terms and Conditions</a>
+                    <a href="cookies.html" style="display: block;">Cookie Policy</a>
+                    <a href="legal.html" style="display: block;">Legal Notice</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ByteWorks UK Ltd. All rights reserved. Registered in England and Wales. Registered Office: The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('email-display').textContent = BUSINESS_EMAIL;
+        document.getElementById('phone-display').textContent = BUSINESS_PHONE;
+        document.getElementById('email-display-2').textContent = BUSINESS_EMAIL;
+        document.getElementById('email-display-3').textContent = BUSINESS_EMAIL;
+        document.getElementById('phone-display-2').textContent = BUSINESS_PHONE;
+        document.getElementById('email-display-4').textContent = BUSINESS_EMAIL;
+        document.getElementById('email-display-5').textContent = BUSINESS_EMAIL;
+        document.getElementById('phone-display-3').textContent = BUSINESS_PHONE;
+    </script>
+</body>
+</html>

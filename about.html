@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About ByteWorks UK Ltd - Our mission, values, operational standards, and commitment to professional IT services in the United Kingdom.">
+    <meta name="keywords" content="about us, company information, IT services company, UK business">
+    <title>About Us - ByteWorks UK Ltd</title>
+    <link rel="stylesheet" href="index.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+        
+        header {
+            background-color: #0a2540;
+            color: #ffffff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: #0a2540;
+        }
+        
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #0a2540;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 25px 0 15px 0;
+            color: #1a1a1a;
+        }
+        
+        h2:first-child {
+            margin-top: 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.9;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .hero-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .value-card {
+            padding: 30px;
+            border: 1px solid #e5e5e5;
+            border-radius: 4px;
+            background-color: #fafafa;
+        }
+        
+        .value-card h3 {
+            margin-top: 0;
+        }
+        
+        .footer {
+            background-color: #0a2540;
+            color: #ffffff;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-content h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .footer-content a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 1.9;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+        
+        .footer-content a:hover {
+            opacity: 1;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 20px;
+            border-left: 4px solid #0a2540;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 24px;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const BUSINESS_PHONE = '+44 113 123 4567';
+        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
+        const BUSINESS_NAME = 'ByteWorks UK Ltd';
+        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
+        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
+    </script>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">ByteWorks UK</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="about">
+        <div class="container">
+            <h1>About ByteWorks UK Ltd</h1>
+            <p class="intro-text">ByteWorks UK Ltd is a professional information technology services company providing comprehensive managed IT support, systems consulting, and business technology solutions to small and medium-sized enterprises across the United Kingdom. Founded on principles of transparency, professional accountability, and technical excellence, we have established ourselves as a trusted technology partner for organisations seeking reliable, certified IT services.</p>
+
+            <h2>Our Company Background</h2>
+            <p>ByteWorks UK Ltd operates as a registered limited company under UK jurisdiction, with full compliance obligations under the Companies House registration framework. Our legal registration provides clients with verified business accountability and transparent operational oversight. We maintain registration as a legitimate UK business entity subject to Companies House requirements and UK tax authority regulations.</p>
+            
+            <p>Our operational foundation reflects over a decade of combined professional experience in enterprise information technology, systems administration, network infrastructure, and business technology consulting. Our founding team comprises experienced IT professionals who recognised the need for professional-grade, affordable technology support services tailored to the specific requirements of UK-based small and medium enterprises.</p>
+
+            <p>Rather than approaching every technology challenge with identical solutions, we have developed bespoke service approaches that align with individual client requirements, industry standards, and operational complexity. This consultative approach has enabled us to build long-term client relationships based on demonstrated technical competence and transparent service delivery.</p>
+
+            <h2>Our Mission and Values</h2>
+            <p>ByteWorks UK Ltd operates according to clearly defined professional values that guide all aspects of our service delivery and business conduct:</p>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Technical Excellence and Professionalism</h3>
+                    <p>We maintain the highest standards of technical proficiency, with all team members holding recognised industry certifications. Our commitment to ongoing professional development ensures that our services reflect current industry best practices and emerging technological developments. We do not compromise on technical standards or professional conduct, regardless of project scope or commercial pressures.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Transparency and Accountability</h3>
+                    <p>Every aspect of our operations is designed to be transparent and verifiable. We provide clear documentation of our qualifications, service scope, operational procedures, and compliance standards. Our clients receive detailed service reporting, transparent pricing, and straightforward communication regarding technical issues and resolution approaches. We welcome scrutiny and believe that transparency strengthens client confidence.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Data Protection and Security Commitment</h3>
+                    <p>Information security is fundamental to our service philosophy. We employ industry-standard encryption, rigorous access controls, regular security audits, and comprehensive data protection measures. Our commitment to UK GDPR compliance and Data Protection Act 2018 requirements extends beyond legal obligation to reflect our genuine commitment to protecting client data and business information.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Client-Centred Approach</h3>
+                    <p>We recognise that every organisation has unique technology requirements, operational constraints, and strategic objectives. Rather than imposing standardised solutions, we invest time in understanding client environments, business priorities, and long-term technology goals. Our service design reflects these specific requirements rather than generic technology roadmaps.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Proactive Support Philosophy</h3>
+                    <p>We employ a proactive managed support model that anticipates issues, implements preventative measures, and monitors systems continuously rather than responding only when problems occur. This approach reduces operational disruptions, minimises emergency support costs, and enables clients to focus on core business activities rather than technology troubleshooting.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Continuous Improvement and Innovation</h3>
+                    <p>The technology landscape evolves continuously, and we maintain commitment to staying current with industry developments, emerging security threats, and new technology capabilities. We regularly review our service offerings, update our technical infrastructure, and implement improvements based on client feedback and industry best practices.</p>
+                </div>
+            </div>
+
+            <h2>Operational Standards and Compliance Framework</h2>
+            <p>ByteWorks UK Ltd operates according to comprehensive compliance and operational standards designed to ensure service quality, information security, and regulatory compliance:</p>
+
+            <h3>UK Legal and Regulatory Compliance</h3>
+            <p>As a registered UK limited company, ByteWorks UK Ltd operates in full compliance with UK statutory requirements including the Companies House Act requirements, tax legislation, employment law, and business conduct standards. Our registered office is located at The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, and all operational decisions are made in accordance with UK jurisdiction and applicable legal frameworks.</p>
+
+            <h3>Data Protection Regulations</h3>
+            <p>Our data handling practices conform fully to the Data Protection Act 2018 and UK GDPR regulations. All personal data collected through our website, service provision, or client interactions is processed according to documented legal bases, with appropriate technical and organisational safeguards. We maintain data processing records, conduct impact assessments for high-risk processing activities, and provide clients with transparent information regarding how their data is handled.</p>
+
+            <h3>Information Security Standards</h3>
+            <p>ByteWorks UK Ltd implements comprehensive information security practices aligned with industry standards including the Cyber Essentials scheme, ISO 27001 principles, and NIST cybersecurity frameworks. Our security architecture includes firewalls, intrusion detection systems, encryption protocols, regular vulnerability assessments, and incident response procedures.</p>
+
+            <h3>Service Quality and Professional Standards</h3>
+            <p>All staff members engaged in service delivery hold relevant professional certifications including CompTIA Security Plus, Microsoft Certified: Azure Administrator, Cisco Certified Network Associate, or equivalent qualifications. We maintain membership in professional bodies including the British Computer Society and participate in ongoing professional development programmes to ensure technical competence and awareness of emerging industry standards.</p>
+
+            <h3>Client Service Standards</h3>
+            <p>We operate according to documented service level agreements that clearly specify support response times, service availability targets, maintenance windows, and communication procedures. Our support team is available during published business hours with defined escalation procedures for urgent issues. We maintain detailed service records and provide clients with transparent reporting regarding service delivery performance.</p>
+
+            <h2>Our Experience and Track Record</h2>
+            <p>ByteWorks UK Ltd brings extensive experience supporting organisations across various industry sectors including professional services, manufacturing, retail, healthcare, education, and financial services. Our project experience encompasses:</p>
+
+            <ul>
+                <li><strong>Infrastructure Migration and Upgrades</strong> - Successfully managed large-scale network migrations, server replacements, and operating system upgrades for 50+ client organisations, with zero unplanned downtime through comprehensive planning and execution management</li>
+                <li><strong>Cybersecurity Implementation</strong> - Implemented comprehensive security programmes including vulnerability assessments, security awareness training, access control systems, and threat monitoring for organisations with 20-500+ users</li>
+                <li><strong>Business Systems Implementation</strong> - Supported deployment of enterprise resource planning systems, customer relationship management platforms, and accounting software for diverse client requirements</li>
+                <li><strong>Disaster Recovery Planning</strong> - Developed and tested comprehensive business continuity and disaster recovery plans enabling organisations to maintain operations during system failures or emergency situations</li>
+                <li><strong>Cloud Migration and Management</strong> - Guided organisations through cloud infrastructure assessment, migration planning, and ongoing management of cloud-based systems aligned with business requirements and cost optimisation objectives</li>
+                <li><strong>IT Support Outsourcing</strong> - Established managed IT support relationships replacing in-house IT functions, reducing operational costs while improving service availability and technical capability</li>
+            </ul>
+
+            <h2>Our Commitment to Client Success</h2>
+            <p>We measure our success not by volume of services delivered but by demonstrated improvements in client operational efficiency, system reliability, and technology capability. Our goal is to be a strategic technology partner enabling organisations to leverage technology effectively for competitive advantage and sustainable growth.</p>
+
+            <p>This commitment extends to transparent communication throughout all client relationships. We provide regular service reviews, discuss technology recommendations with full context regarding implementation costs and potential benefits, and respect client decision-making authority regarding technology investment decisions.</p>
+
+            <h2>Social Responsibility and Professional Conduct</h2>
+            <p>ByteWorks UK Ltd recognises responsibilities beyond commercial service delivery. We are committed to:</p>
+
+            <ul>
+                <li>Maintaining highest standards of professional conduct and ethical business practices</li>
+                <li>Protecting client confidentiality and information security with comprehensive information handling procedures</li>
+                <li>Supporting sustainable business practices including responsible technology procurement and electronic waste management</li>
+                <li>Contributing to digital skills development through mentorship, training, and knowledge sharing with emerging technology professionals</li>
+                <li>Complying with applicable employment law, health and safety regulations, and workplace equality standards</li>
+            </ul>
+
+            <h2>Our Team and Leadership</h2>
+            <p>ByteWorks UK Ltd is led by experienced technology professionals with deep expertise in IT infrastructure, systems administration, business technology strategy, and service delivery management. Our leadership team combines practical technical knowledge with business management experience, enabling balanced decision-making regarding technology investments and operational priorities.</p>
+
+            <p>Our operational team comprises certified professionals including network administrators, systems engineers, security specialists, and business systems consultants. All team members undergo regular professional development, maintain relevant industry certifications, and participate in continuing education programmes ensuring currency with technology developments and industry best practices.</p>
+
+            <h2>Looking Forward</h2>
+            <p>As the business technology landscape evolves, ByteWorks UK Ltd remains committed to innovation while maintaining the professional standards and transparent business practices that have characterised our service delivery. We continue to expand our technical capabilities, deepen our industry expertise, and strengthen our commitment to supporting UK-based organisations in leveraging technology effectively.</p>
+
+            <p>We invite organisations to contact us to discuss their technology requirements, explore potential service partnerships, or simply learn more about how ByteWorks UK can support their business objectives. Our approach is consultative, transparent, and focused on understanding your specific requirements before proposing solutions.</p>
+
+            <div class="highlight">
+                <strong>Contact us to learn more about ByteWorks UK Ltd and how we can support your technology requirements.</strong><br><br>
+                Telephone: <span id="phone-display"></span><br>
+                Email: <span id="email-display"></span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>About ByteWorks UK</h4>
+                    <p style="margin-bottom: 10px;">Professional IT services and managed technology support for UK-based businesses.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="index.html" style="display: block;">Home</a>
+                    <a href="services.html" style="display: block;">Services</a>
+                    <a href="contact.html" style="display: block;">Contact</a>
+                    <a href="faq.html" style="display: block;">FAQ</a>
+                </div>
+                <div>
+                    <h4>Legal Documentation</h4>
+                    <a href="privacy.html" style="display: block;">Privacy Policy</a>
+                    <a href="terms.html" style="display: block;">Terms and Conditions</a>
+                    <a href="cookies.html" style="display: block;">Cookie Policy</a>
+                    <a href="legal.html" style="display: block;">Legal Notice</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ByteWorks UK Ltd. All rights reserved. Registered in England and Wales. Registered Office: The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('phone-display').textContent = BUSINESS_PHONE;
+        document.getElementById('email-display').textContent = BUSINESS_EMAIL;
+    </script>
+</body>
+</html>
