@@ -7,6 +7,7 @@
     <meta name="keywords" content="IT services, managed IT support, business technology, Leeds, UK">
     <meta name="author" content="ByteWorks UK Ltd">
     <title>ByteWorks UK Ltd - Professional IT Services and Business Technology Support</title>
+    <script src="config.js"></script>
     <style>
         * {
             margin: 0;
@@ -261,14 +262,6 @@
     </style>
 </head>
 <body>
-    <script>
-        // Global business contact variable for consistency across all pages
-        const BUSINESS_PHONE = '+44 113 123 4567';
-        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
-        const BUSINESS_NAME = 'ByteWorks UK Ltd';
-        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
-        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
-    </script>
 
     <header>
         <nav class="container">
@@ -347,7 +340,7 @@
             <p>ByteWorks UK is committed to providing accessible services and information to all users. This website is designed with accessibility standards in mind, and we welcome feedback regarding accessibility features or any difficulties accessing our information or services.</p>
 
             <p style="margin-top: 40px; font-size: 14px; opacity: 0.8;">
-                For detailed information regarding our services, operating procedures, and commitments, please review our complete documentation available through the navigation menu. For specific inquiries, please use our contact form or call <span id="phone-display"></span> during business hours.
+                For detailed information regarding our services, operating procedures, and commitments, please review our complete documentation available through the navigation menu. For specific inquiries, please use our contact form or call <span data-phone-field></span> during business hours.
             </p>
         </div>
     </section>
@@ -380,8 +373,5 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('phone-display').textContent = BUSINESS_PHONE;
-    </script>
 </body>
 </html>

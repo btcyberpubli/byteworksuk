@@ -6,6 +6,7 @@
     <meta name="description" content="Contact ByteWorks UK Ltd - Phone, email, contact form, business address and opening hours in Leeds, United Kingdom.">
     <meta name="keywords" content="contact, phone, email, business address, customer support">
     <title>Contact Us - ByteWorks UK Ltd</title>
+    <script src="config.js"></script>
     <style>
         * {
             margin: 0;
@@ -297,13 +298,6 @@
     </style>
 </head>
 <body>
-    <script>
-        const BUSINESS_PHONE = '+44 113 123 4567';
-        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
-        const BUSINESS_NAME = 'ByteWorks UK Ltd';
-        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
-        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
-    </script>
 
     <header>
         <nav class="container">
@@ -338,7 +332,7 @@
                 </div>
 
                 <div class="contact-card">
-                    <h3>Email</h3>
+                    <h3>Email</h3>data-phone-field
                     <div class="contact-info">
                         <strong>General Enquiries:</strong>
                         <a href="mailto:" id="email-link" style="color: #0a2540; text-decoration: none;"></a>
@@ -348,7 +342,7 @@
             </div>
 
             <div class="contact-card" style="margin-top: 30px;">
-                <h3>Registered Office and Business Address</h3>
+                <h3>Registered Office and data-email-fields</h3>
                 <p style="margin-bottom: 20px;">All correspondence, invoices, and formal documentation should be addressed to:</p>
                 <div class="contact-info" style="margin-top: 0;">
                     <strong>ByteWorks UK Ltd</strong><br>
@@ -358,7 +352,7 @@
                     LS1 5DL<br>
                     United Kingdom
                 </div>
-                <p style="margin-top: 20px;">This address is our registered office and operational base. Visitors are welcome by appointment. To schedule an office visit, please contact our team via telephone or email to arrange a suitable time.</p>
+                <p style="m data-business-name>>This address is our registered office and operational base. Visitors are welcome by appointment. To schedule an office visit, please contact our team via telephone or email to arrange a suitable time.</p>
             </div>
 
             <h2 style="margin-top: 50px;">Business Hours and Response Times</h2>
@@ -513,12 +507,5 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('phone-link').href = 'tel:' + BUSINESS_PHONE;
-        document.getElementById('phone-link').textContent = BUSINESS_PHONE;
-        document.getElementById('email-link').href = 'mailto:' + BUSINESS_EMAIL;
-        document.getElementById('email-link').textContent = BUSINESS_EMAIL;
-        document.getElementById('email-display-dpo').textContent = BUSINESS_EMAIL;
-    </script>
 </body>
 </html>

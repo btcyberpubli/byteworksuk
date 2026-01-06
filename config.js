@@ -13,7 +13,7 @@ const BUSINESS_CONFIG = {
     legalName: 'ByteWorks UK Ltd',
     
     // Contact Information
-    phone: '+44 113 123 4568',
+    phone: '+44 113 123 4567',
     email: 'info@byteworksuk.co.uk',
     
     // Physical Address
@@ -158,6 +158,20 @@ function updateCopyrightYearOnPage() {
 }
 
 /**
+ * UTILITY FUNCTION: Populate website URL on page load
+ * Automatically updates all elements with data-website attribute
+ */
+function updateWebsiteOnPage() {
+    const websiteElements = document.querySelectorAll('[data-website]');
+    websiteElements.forEach(element => {
+        element.textContent = BUSINESS_CONFIG.website.url;
+        if (element.tagName === 'A') {
+            element.href = BUSINESS_CONFIG.website.url;
+        }
+    });
+}
+
+/**
  * MAIN INITIALIZATION FUNCTION
  * Call this function on page load to update all business information
  */
@@ -170,6 +184,7 @@ function initializeBusinessConfig() {
             updateAddressOnPage();
             updateBusinessNameOnPage();
             updateCopyrightYearOnPage();
+            updateWebsiteOnPage();
         });
     } else {
         // DOM already loaded
@@ -178,6 +193,7 @@ function initializeBusinessConfig() {
         updateAddressOnPage();
         updateBusinessNameOnPage();
         updateCopyrightYearOnPage();
+        updateWebsiteOnPage();
     }
 }
 
@@ -200,6 +216,7 @@ initializeBusinessConfig();
  *    - <span data-address-field></span> (for full address)
  *    - <span data-business-name></span> (for company name)
  *    - <span data-copyright-year></span> (for copyright year)
+ *    - <span data-website></span>       (for website URL)
  * 
  * Alternative: Access values directly in JavaScript:
  * - BUSINESS_CONFIG.phone
@@ -212,4 +229,3 @@ initializeBusinessConfig();
  * - getBusinessName()
  * - getWebsiteURL()
  */
-

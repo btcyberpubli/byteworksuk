@@ -6,6 +6,7 @@
     <meta name="description" content="ByteWorks UK Ltd Legal Notice - Legal identification and regulatory information.">
     <meta name="keywords" content="legal notice, company information, registration details">
     <title>Legal Notice - ByteWorks UK Ltd</title>
+    <script src="config.js"></script>
     <style>
         * {
             margin: 0;
@@ -216,13 +217,6 @@
     </style>
 </head>
 <body>
-    <script>
-        const BUSINESS_PHONE = '+44 113 123 4567';
-        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
-        const BUSINESS_NAME = 'ByteWorks UK Ltd';
-        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
-        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
-    </script>
 
     <header>
         <nav class="container">
@@ -270,9 +264,9 @@
 
             <div class="info-card">
                 <h3 style="margin-top: 0;">Contact Information</h3>
-                <p><strong>Business Email:</strong> <span id="email-display"></span></p>
-                <p><strong>Business Telephone:</strong> <span id="phone-display"></span></p>
-                <p><strong>Website:</strong> <span id="website-display"></span></p>
+                <p><strong>Business Email:</strong> <span data-email-field></span></p>
+                <p><strong>Business Telephone:</strong> <span data-phone-field></span></p>
+                <p><strong>Website:</strong> <span data-website></span></p>
                 <p>All business communications, correspondence, and inquiries should be directed to the contact details provided. Response to communications will be provided during normal business hours (Monday to Friday, 09:00 to 17:30 GMT).</p>
             </div>
 
@@ -339,7 +333,7 @@
 
             <div class="info-card">
                 <h3 style="margin-top: 0;">Website Ownership</h3>
-                <p><strong>Website URL:</strong> <span id="website-display-2"></span></p>
+                <p><strong>Website URL:</strong> <span data-website></span></p>
                 <p>This website is owned and operated by ByteWorks UK Ltd. The website domain is registered in the name of the company and managed by authorised personnel. Website content, design, and functionality are controlled by ByteWorks UK Ltd.</p>
             </div>
 
@@ -410,13 +404,13 @@
                 <p>For legal correspondence, formal notices, or official communications, please contact:</p>
                 <p>
                     <strong>Legal Affairs</strong><br>
-                    ByteWorks UK Ltd<br>
+                    <span data-business-name></span><br>
                     The Tea Factory<br>
                     17 Lower Regent Street<br>
                     Leeds<br>
                     LS1 5DL<br>
                     United Kingdom<br><br>
-                    <strong>Email:</strong> <span id="email-display-2"></span>
+                    <strong>Email:</strong> <span data-email-field></span>
                 </p>
                 <p>Please mark correspondence "Legal and Compliance Matter" to ensure appropriate routing. Responses to legal communications will be provided according to applicable legal requirements and timeframes.</p>
             </div>
@@ -430,7 +424,7 @@
 
             <div class="info-card">
                 <h3 style="margin-top: 0;">Verification Documentation</h3>
-                <p>ByteWorks UK Ltd can provide copies of registration documents, proof of business legitimacy, and compliance certifications upon request. Contact <span id="email-display-3"></span> to request verification documentation or certificates of good standing.</p>
+                <p>ByteWorks UK Ltd can provide copies of registration documents, proof of business legitimacy, and compliance certifications upon request. Contact <span data-email-field></span> to request verification documentation or certificates of good standing.</p>
             </div>
 
             <div class="highlight-box">
@@ -471,13 +465,5 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('email-display').textContent = BUSINESS_EMAIL;
-        document.getElementById('phone-display').textContent = BUSINESS_PHONE;
-        document.getElementById('website-display').textContent = WEBSITE_URL;
-        document.getElementById('website-display-2').textContent = WEBSITE_URL;
-        document.getElementById('email-display-2').textContent = BUSINESS_EMAIL;
-        document.getElementById('email-display-3').textContent = BUSINESS_EMAIL;
-    </script>
 </body>
 </html>

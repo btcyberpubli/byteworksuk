@@ -6,6 +6,7 @@
     <meta name="description" content="ByteWorks UK Ltd Terms and Conditions - Legal terms governing use of website and services.">
     <meta name="keywords" content="terms and conditions, legal terms, service agreement">
     <title>Terms and Conditions - ByteWorks UK Ltd</title>
+    <script src="config.js"></script>
     <style>
         * {
             margin: 0;
@@ -204,13 +205,6 @@
     </style>
 </head>
 <body>
-    <script>
-        const BUSINESS_PHONE = '+44 113 123 4567';
-        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
-        const BUSINESS_NAME = 'ByteWorks UK Ltd';
-        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
-        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
-    </script>
 
     <header>
         <nav class="container">
@@ -413,14 +407,14 @@
             <h2>20. Contact Information</h2>
             <p>For questions regarding these Terms and Conditions or to provide notice, please contact:</p>
             <p>
-                ByteWorks UK Ltd<br>
+                <span data-business-name></span><br>
                 The Tea Factory<br>
                 17 Lower Regent Street<br>
                 Leeds<br>
                 LS1 5DL<br>
                 United Kingdom<br><br>
-                <strong>Email:</strong> <span id="email-display-3"></span><br>
-                <strong>Telephone:</strong> <span id="phone-display-2"></span>
+                <strong>Email:</strong> <span data-email-field></span><br>
+                <strong>Telephone:</strong> <span data-phone-field></span>
             </p>
 
             <div class="highlight-box">
@@ -458,12 +452,5 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('email-display').textContent = BUSINESS_EMAIL;
-        document.getElementById('phone-display').textContent = BUSINESS_PHONE;
-        document.getElementById('email-display-2').textContent = BUSINESS_EMAIL;
-        document.getElementById('email-display-3').textContent = BUSINESS_EMAIL;
-        document.getElementById('phone-display-2').textContent = BUSINESS_PHONE;
-    </script>
 </body>
 </html>

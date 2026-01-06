@@ -6,6 +6,7 @@
     <meta name="description" content="ByteWorks UK Ltd Cookie Policy - Information about cookies and tracking technologies used on this website.">
     <meta name="keywords" content="cookie policy, cookies, tracking, analytics">
     <title>Cookie Policy - ByteWorks UK Ltd</title>
+    <script src="config.js"></script>
     <style>
         * {
             margin: 0;
@@ -233,13 +234,6 @@
     </style>
 </head>
 <body>
-    <script>
-        const BUSINESS_PHONE = '+44 113 123 4567';
-        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
-        const BUSINESS_NAME = 'ByteWorks UK Ltd';
-        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
-        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
-    </script>
 
     <header>
         <nav class="container">
@@ -418,7 +412,7 @@
 
             <h3>Browser Settings</h3>
             <p>Most web browsers allow users to control cookie storage and deletion through browser settings. You can typically:</p>
-            <ul>
+            <ul>data-email-field
                 <li><strong>Block all cookies:</strong> Prevent all cookies from being stored on your device</li>
                 <li><strong>Block third-party cookies only:</strong> Allow first-party cookies while blocking third-party cookies</li>
                 <li><strong>Allow all cookies:</strong> Allow all cookies to be stored</li>
@@ -460,14 +454,14 @@
             <h2>10. Contact Information</h2>
             <p>For questions regarding this Cookie Policy or cookie usage on this website, please contact:</p>
             <p>
-                ByteWorks UK Ltd<br>
+                <span data-business-name></span><br>
                 The Tea Factory<br>
                 17 Lower Regent Street<br>
                 Leeds<br>
                 LS1 5DL<br>
                 United Kingdom<br><br>
-                <strong>Email:</strong> <span id="email-display-3"></span><br>
-                <strong>Telephone:</strong> <span id="phone-display"></span>
+                <strong>Email:</strong> <span data-email-field></span><br>
+                <strong>Telephone:</strong> <span data-phone-field></span>
             </p>
 
             <div class="highlight-box">
@@ -505,11 +499,5 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('email-display').textContent = BUSINESS_EMAIL;
-        document.getElementById('email-display-2').textContent = BUSINESS_EMAIL;
-        document.getElementById('email-display-3').textContent = BUSINESS_EMAIL;
-        document.getElementById('phone-display').textContent = BUSINESS_PHONE;
-    </script>
 </body>
 </html>

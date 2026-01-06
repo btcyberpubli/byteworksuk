@@ -6,6 +6,7 @@
     <meta name="description" content="ByteWorks UK Ltd Privacy Policy - Information about how we collect, process, and protect your personal data in compliance with UK GDPR.">
     <meta name="keywords" content="privacy policy, data protection, GDPR, personal data">
     <title>Privacy Policy - ByteWorks UK Ltd</title>
+    <script src="config.js"></script>
     <style>
         * {
             margin: 0;
@@ -221,13 +222,6 @@
     </style>
 </head>
 <body>
-    <script>
-        const BUSINESS_PHONE = '+44 113 123 4567';
-        const BUSINESS_EMAIL = 'info@byteworksuk.co.uk';
-        const BUSINESS_NAME = 'ByteWorks UK Ltd';
-        const BUSINESS_ADDRESS = 'The Tea Factory, 17 Lower Regent Street, Leeds, LS1 5DL, United Kingdom';
-        const WEBSITE_URL = 'https://www.byteworksuk.co.uk';
-    </script>
 
     <header>
         <nav class="container">
@@ -259,14 +253,14 @@
                 LS1 5DL<br>
                 United Kingdom<br><br>
                 <strong>Email:</strong> <span id="email-display"></span><br>
-                <strong>Telephone:</strong> <span id="phone-display"></span>
-            </p>
-
-            <h2>2. Types of Personal Data Collected</h2>
-            <p>ByteWorks UK Ltd collects personal data in the following categories:</p>
-
-            <h3>Website Visitor Data</h3>
-            <ul>
+                <strong data-business-name></strong><br>
+                The Tea Factory<br>
+                17 Lower Regent Street<br>
+                Leeds<br>
+                LS1 5DL<br>
+                United Kingdom<br><br>
+                <strong>Email:</strong> <span data-email-field></span><br>
+                <strong>Telephone:</strong> <span data-phone-field
                 <li><strong>Contact Information:</strong> Name, email address, telephone number, and company name submitted through contact forms or enquiries</li>
                 <li><strong>Technical Data:</strong> IP address, browser type, operating system, referring website, pages visited, and time spent on website (collected through website analytics)</li>
                 <li><strong>Cookie Data:</strong> Information stored in cookies including user preferences, session information, and analytics identifiers</li>
@@ -442,13 +436,13 @@
             <p>ByteWorks UK Ltd does not use automated decision-making systems for decisions with significant effects on individuals. All significant business decisions involving personal data are made by humans with appropriate oversight.</p>
 
             <h3>Exercising Rights</h3>
-            <p>Data subject rights are exercised by contacting us at <span id="email-display-3"></span> with the subject line "Data Subject Rights Request". Requests must include sufficient information to identify the individual and specify which right is being exercised. We verify requestor identity before providing information and respond within 30 days of receipt. No fees apply except where requests are manifestly unfounded or excessive.</p>
+            <p>Data subject rights are exercised by contacting us at <span data-email-field></span> with the subject line "Data Subject Rights Request". Requests must include sufficient information to identify the individual and specify which right is being exercised. We verify requestor identity before providing information and respond within 30 days of receipt. No fees apply except where requests are manifestly unfounded or excessive.</p>
 
             <h2>8. Cookies and Tracking Technologies</h2>
             <p>ByteWorks UK Ltd uses cookies and similar tracking technologies on this website to improve user experience and analyse website usage. Users can control cookie settings through browser preferences. See our Cookie Policy for detailed information.</p>
 
             <h2>9. Children's Privacy</h2>
-            <p>ByteWorks UK Ltd does not intentionally collect personal data from individuals under 18 years of age. Parents or guardians who believe their child's data has been collected are requested to contact us immediately at <span id="email-display-4"></span>. We will take appropriate steps to delete such data.</p>
+            <p>ByteWorks UK Ltd does not intentionally collect personal data from individuals under 18 years of age. Parents or guardians who believe their child's data has been collected are requested to contact us immediately at <span data-email-field></span>. We will take appropriate steps to delete such data.</p>
 
             <h2>10. Changes to This Privacy Policy</h2>
             <p>ByteWorks UK Ltd may update this Privacy Policy to reflect regulatory changes, business developments, or improved data protection practices. The updated policy will be published on this website with the updated date. Significant changes will be communicated to affected individuals via email or website notification.</p>
@@ -470,14 +464,14 @@
             <p>For questions regarding this Privacy Policy, data protection practices, or to exercise data subject rights, please contact:</p>
             <p>
                 <strong>Data Protection Enquiries</strong><br>
-                ByteWorks UK Ltd<br>
+                <span data-business-name></span><br>
                 The Tea Factory<br>
                 17 Lower Regent Street<br>
                 Leeds<br>
                 LS1 5DL<br>
                 United Kingdom<br><br>
-                <strong>Email:</strong> <span id="email-display-5"></span><br>
-                <strong>Telephone:</strong> <span id="phone-display-2"></span>
+                <strong>Email:</strong> <span data-email-field></span><br>
+                <strong>Telephone:</strong> <span data-phone-field></span>
             </p>
 
             <h3>Supervisory Authority</h3>
@@ -530,14 +524,5 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('email-display').textContent = BUSINESS_EMAIL;
-        document.getElementById('phone-display').textContent = BUSINESS_PHONE;
-        document.getElementById('email-display-2').textContent = BUSINESS_EMAIL;
-        document.getElementById('email-display-3').textContent = BUSINESS_EMAIL;
-        document.getElementById('email-display-4').textContent = BUSINESS_EMAIL;
-        document.getElementById('email-display-5').textContent = BUSINESS_EMAIL;
-        document.getElementById('phone-display-2').textContent = BUSINESS_PHONE;
-    </script>
 </body>
 </html>
